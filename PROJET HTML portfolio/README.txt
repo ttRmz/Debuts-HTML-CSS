@@ -24,8 +24,6 @@ div.container_right {
 Je retrouve le même problème pour les icons dans mon footer.
 Sans ces problemes la page fonctionne parfaitement, comme on peut le voir
 avec une preview google chrome.
-Si tu as une solution n'hesite pas à me répondre par mail s'il te plaît.
 
 J'ai quand même uploadé le site malgré les defauts pour voir ce que ça
 donne sur mobile : http://ramirez-io.esy.es/
-Merci.
