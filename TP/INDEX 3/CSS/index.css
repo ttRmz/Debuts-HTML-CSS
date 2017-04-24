@@ -1,0 +1,128 @@
+body {
+    background-image: url(omfgdogs.gif)
+}
+@keyframes gauchedroite {
+    0% {
+        top: 0px;
+        left: 0px;
+        transform: rotate(90deg);
+        border-radius: 50%;
+    }
+    25% {
+        top: 0px;
+        left: 78%;
+        border-radius: 0%
+    }
+    50% {
+        left: 78%;
+        top: 54%;
+        border-radius: 50%;
+    }
+    75% {
+        top: 54%;
+        left: 0%;
+        border-radius: 0%;
+    }
+    100% {
+        top: 0%;
+        left: 0%;
+        border-radius: 50%;
+    }
+}
+@keyframes gauchedroite2 {
+    0% {
+        top: 0px;
+        left: 0px;
+        transform: rotate(90deg);
+        border-radius: 0%;
+    }
+    25% {
+        top: 0px;
+        left: 78%;
+        border-radius: 50%;
+    }
+    50% {
+        left: 78%;
+        top: 54%;
+        border-radius: 0%;
+    }
+    75% {
+        top: 54%;
+        left: 0%;
+        border-radius: 50%;
+    }
+    100% {
+        top: 0%;
+        left: 0%;
+        border-radius: 0%;
+        
+    }
+}
+.shape {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    animation: gauchedroite 7s linear infinite;
+}
+
+* {
+    outline: none;
+}
+
+@media screen and (max-width: 600px) {
+    .shape {
+        background-color: blue;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .shape {
+        background-color: green;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .shape {
+        background-color: red;
+    }
+}
+
+.shape:hover {
+    background-color: black;
+}
+
+
+.shape2 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    animation: gauchedroite2 7s linear infinite;
+}
+
+* {
+    outline: none;
+}
+
+@media screen and (max-width: 600px) {
+    .shape2 {
+        background-color: blue;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .shape2 {
+        background-color: green;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .shape2 {
+        background-color: red;
+    }
+}
+
+.shape:hover {
+    background-color: black;
+}

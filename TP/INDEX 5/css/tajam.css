@@ -1,0 +1,172 @@
+div.header {
+    background-image: url(../design/bgk-header.png);
+    background-attachment: fixed;
+    background-size: auto;
+    color: white;
+    text-align: center;
+    height: 670px;
+}
+
+div.nav {
+    padding-left: 260px;
+    flex-direction: row;
+    /* display: flex; */
+}
+
+div.itemsnav {
+    width: 960px;
+    padding-top: 10px;
+    /* margin-left: auto; */
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    align-items: center;
+    justify-content: center;
+}
+
+div.texthead {
+    width: 780px;
+    margin: auto;
+    padding-top: 135px;
+}
+
+div.texthead p {
+    /* width: 700px;*/
+    margin: auto;
+    font-weight: lighter;
+    font-size: 16px;
+    padding-bottom: 50px;
+}
+
+div.texthead hr {
+    height: inherit;
+    width: 50px;
+    margin: auto;
+    border-color: darkturquoise;
+}
+
+div.texthead a {
+    font-size: 14px;
+    width: 120px;
+    height: 40px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    font-weight: bold;
+    color: darkturquoise;
+    font-stretch: semi-condensed;
+    border-color: darkturquoise;
+    text-decoration: none;
+}
+
+div.nav a {
+    font-family: inherit;
+    font-stretch: ultra-expanded;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 12px;
+    display: inline;
+    font-weight: bold;
+}
+
+div.story {
+    background-color: white;
+    color: black;
+    text-align: left;
+    height: auto;
+    /* width: 80%; */
+    width: 880px;
+    /** max-width: 700px; **/
+    margin-left: auto;
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    align-content: space-around;
+    align-items: center;
+    padding-bottom: 70px;
+    padding-top: 70px;
+}
+
+div.story object {
+    padding-right: 100px;
+}
+
+div.video {
+    background-image: url(../design/bgk-middle.png);
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    height: 550px;
+}
+
+div.expertise {
+    background-color: white;
+    height: 755px;
+}
+
+div.exptitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 70px;
+}
+
+div.exptop {
+    column-count: 3;
+    column-gap: 1px;
+    width: 940px;
+    text-align: center;
+    margin: auto;
+    padding-top: 85px;
+}
+
+div.expbot {
+    column-count: 3;
+    column-gap: 1px;
+    width: 940px;
+    text-align: center;
+    margin: auto;
+}
+
+div.team {
+    height: 710px;
+    background-image: url(../design/bgk-header.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+div.teamtop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 70px;
+    justify-content: center;
+}
+
+div.teambot {
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+
+div.message {
+    height: 685px;
+    background-color: white;
+}
+
+div.footer {
+    height: 400px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(../design/bgk-footer.png);
+}

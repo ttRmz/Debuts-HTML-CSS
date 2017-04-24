@@ -1,0 +1,23 @@
+h1 {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-family: sans-serif
+}
+
+div.image {
+    height: 500px;
+    width: 500px;
+    background-image: url("../img/500x500.jpg");
+    margin: auto;
+}
+
+div.lecteur {
+    height: 30px;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    background-color: black;
+}
