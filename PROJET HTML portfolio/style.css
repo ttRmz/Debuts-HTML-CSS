@@ -7,23 +7,29 @@
     div.header {
         text-decoration: none;
         font-weight: bold;
-        -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
-        -moz-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
         box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
         background-color: #ffffff;
         position: fixed;
         width: 100%;
-        height: 80px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         z-index: 2;
     }
     
     div.head {
         color: #666666;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
-        align-items: baseline;
+        -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+        align-items: center;
         width: 70%;
+        height: 100%;
         margin: auto;
     }
     
@@ -35,6 +41,7 @@
     
     img:hover {
         opacity: 0.5;
+        -webkit-animation-duration: 1s;
         animation-duration: 1s;
     }
     
@@ -57,13 +64,17 @@
         -webkit-transition-duration: 0.3s;
         transition-duration: 0.5s;
         -webkit-transition-property: transform;
+        -webkit-transition-property: -webkit-transform;
+        transition-property: -webkit-transform;
         transition-property: transform;
+        transition-property: transform, -webkit-transform;
     }
     
     a.animated.zoomInRight:hover,
     a.animated.zoomInRight:focus,
     a.animated.zoomInRight:active {
         color: #8db8d8;
+        -webkit-transform: scale(1.2);
         transform: scale(1.2);
     }
     
@@ -75,6 +86,8 @@
     div.container {
         width: 70%;
         margin: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         padding: 100px 0px 0px;
     }
@@ -99,16 +112,23 @@
         margin-left: 53%;
         /* margin left de 53% seulement pour chrome */
         /* margin left de 4% pour toute autre plateforme */
-        -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
-        -moz-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
         background-color: #ffffff;
     }
     
     div.right_top {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         font-size: 75%;
         margin: auto;
@@ -152,8 +172,6 @@
     footer {
         text-decoration: none;
         font-weight: bold;
-        -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
-        -moz-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
         box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
         background-color: #ffffff;
         width: 100%;
@@ -165,8 +183,14 @@
         margin: auto;
         width: 70%;
         padding: 15px 0px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
     
@@ -177,8 +201,12 @@
     }
     
     .foot_right {
-        width: 25%;
+        width: 22%;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
     
@@ -189,12 +217,17 @@
         -webkit-transition-duration: 0.3s;
         transition-duration: 0.5s;
         -webkit-transition-property: transform;
+        -webkit-transition-property: -webkit-transform;
+        transition-property: -webkit-transform;
         transition-property: transform;
+        transition-property: transform, -webkit-transform;
+        height: 25px;
     }
     
     .foot_right img:hover,
     .foot_right img:focus,
     .foot_right img:active {
+        -webkit-transform: scale(1.2);
         transform: scale(1.2);
     }
     /* RESPONSIVE */
@@ -204,10 +237,9 @@
             padding: 0;
             text-decoration: none;
             font-weight: bold;
-            -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
-            -moz-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
             box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
-            height: 81.2px;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
             background-color: #ffffff;
             position: fixed;
@@ -216,19 +248,31 @@
         }
         div.head {
             color: #666666;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
             justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
             width: 90%;
             margin: auto;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
             flex-direction: column;
+            -ms-flex-line-pack: center;
             align-content: center;
         }
         div.container {
             width: 90%;
             margin: auto;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            padding: 100px 0px 0px;
+            padding: 115px 0px 0px;
         }
         h1.animated.flip {
             font-size: 16px;
@@ -249,15 +293,22 @@
             margin-left: 65%;
             /* margin left de 65% seulement pour chrome */
             /* margin left de 2% pour toute autre plateforme */
-            -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
-            -moz-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
             box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
             background-color: #ffffff;
         }
         div.right_top {
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
             justify-content: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
             flex-direction: column;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
             font-size: 75%;
             margin: auto;
@@ -283,6 +334,9 @@
         .left_article ul {
             font-family: catamaran;
             font-size: 10px;
+        }
+        .foot_right img {
+            height: 25px;
         }
     }
     
