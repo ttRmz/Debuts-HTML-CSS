@@ -16,8 +16,9 @@
         <div class="head">
             <div class="head_title" style="display:flex;flex-direction:column;align-items:center;">
                 <a href="#hautdepage"><img src="img/logo.png" style="height:55px;padding-bottom:7%;"></a>
-                <h1 class="animated flip">RAMIREZ.io</h1></div>
-            <div class="head_nav"> <a class="animated zoomInRight" href="#hautdepage">Accueil</a> <a class="animated zoomInRight" href="#exp">Experience</a> <a class="animated zoomInRight" href="#act">Activités</a> <a class="animated zoomInRight" href="#footer"> Contact</a> </div>
+                <h1 class="animated flip">RAMIREZ.io</h1>
+            </div>
+            <div class="head_nav"> <a class="animated zoomInRight js-scrollTo" href="#hautdepage">Accueil</a> <a class="animated zoomInRight js-scrollTo" href="#exp">Experience</a> <a class="animated zoomInRight js-scrollTo" href="#act">Activités</a> <a class="animated zoomInRight js-scrollTo" href="#footer"> Contact</a> </div>
         </div>
         <br> </div>
     <div id="hautdepage"></div>
@@ -30,7 +31,8 @@
                         <br>Ecole Ingésup, 139 rue des Pyrénées, (75020 Paris)
                         <br>
                         <br>"Ingésup est une formation d’ingénieur informatique préparant au titre d’Expert Informatique et Système d’Information enregistré au RNCP au niveau I. L’école propose 2 cycles de formation : Bachelor (Bac +3) et Mastère (Bac +5). La formation en alternance informatique s’effectue dès la 3e année du cycle Bachelor afin de rendre les étudiants opérationnels et professionnels."</p>
-                    <h6>2016-2017</h6> </div>
+                    <h6>2016-2017</h6>
+                </div>
                 <div class="left_article" data-aos="fade-down" data-aos-anchor-placement="center-bottom">
                     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                         <!-- Indicators -->
@@ -61,7 +63,8 @@
                     <h6>2016</h6>
                     <p>Diplôme national du Brevet des collèges
                         <br>Collège le Vieux Chêne, (1 chemin du Bicheret, 77700 Chessy)</p>
-                    <h6>2012</h6> </div>
+                    <h6>2012</h6>
+                </div>
                 <div id="exp" class="left_article" data-aos="fade-up" data-aos-anchor-placement="center-bottom"> <img src="img/acorus.png" style="width:100%;height:auto;">
                     <h3>Experience</h3>
                     <p>ENTREPRISE ACORUS (77183 Croissy-Beaubourg)
@@ -82,7 +85,8 @@
                             <li>Sens des responsabilités</li>
                         </ul>
                     </p>
-                    <h6>2015-2016</h6> </div>
+                    <h6>2015-2016</h6>
+                </div>
                 <div id="act" class="left_article" data-aos="fade-up" data-aos-anchor-placement="center-bottom"> <img src="img/vinsurvin.jpg" style="width:100%;height:auto;">
                     <h3>Membre de l'asso VinSurVin Ynov</h3>
                     <p>Le club oenologie Ynov Paris revient pour une nouvelle édition.
@@ -92,22 +96,26 @@
                         <br>
                         <br>Vin sur Vin arrive à la rescousse !
                         <br>Vous pourrez enfin conclure avec votre date qui sera trop impressionné par votre culture (et oui chacun ses objectifs). </p>
-                    <h6>2016-20XX</h6> </div>
+                    <h6>2016-20XX</h6>
+                </div>
                 <div class="left_article" data-aos="fade-up" data-aos-anchor-placement="center-bottom"> <img src="img/dance.png" style="width:100%;height:auto;">
                     <h3>Danse Hip Hop </h3>
                     <p>Le "Breakdance"</p>
-                    <h6>2013-2015</h6> </div>
+                    <h6>2013-2015</h6>
+                </div>
                 <div class="left_article" data-aos="fade-up" data-aos-anchor-placement="center-bottom"> <img src="img/gelec.jpg" style="width:100%;height:auto;" alt="">
                     <h3>Une passion pour la musique</h3>
                     <p>Je pratique la guitare folk et electrique depuis bientôt cinq ans, j'ai eu la chance de pouvoir participer à quelques évènements comme la fête de la musique grâce a mon ancienne école.
                         <br>
                         <br> Cette activité est pour moi très importante, elle me permet de me ressourcer.</p>
-                    <h6>2012-20XX</h6> </div>
+                    <h6>2012-20XX</h6>
+                </div>
                 <div class="left_article" data-aos="fade-up" data-aos-anchor-placement="center-bottom"> <img src="img/info.jpg" style="width:100%;height:auto;">
                     <h3>Informatique</h3>
                     <p>Logiciels textes et vidéos.
                         <br>Initiation en langage de programmation (C et C++) et web (html5 et CSS3).</p>
-                    <h6>2016</h6> </div>
+                    <h6>2016</h6>
+                </div>
             </div>
             <div class="container_right">
                 <div class="cont_right">
@@ -134,6 +142,19 @@
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script type="text/javascript" src="anim.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+                var page = $(this).attr('href'); // Page cible
+                var speed = 750; // Durée de l'animation (en ms)
+                $('html, body').animate({
+                    scrollTop: $(page).offset().top
+                }, speed); // Go
+                return false;
+            });
+        });
+
+    </script>
 </body>
 <footer>
     <div class="footer" id="footer">
