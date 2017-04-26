@@ -23,6 +23,6 @@ Sans ces problemes la page fonctionne parfaitement, comme on peut le voir
 avec google chrome.
 
 J'ai quand même hébergé le site malgré les defauts pour voir ce que ça
-donne sur mobile
+donne sur mobile.
 
 # Demo : http://ramirez-io.esy.es/
