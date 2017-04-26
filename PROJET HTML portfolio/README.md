@@ -25,4 +25,4 @@ avec google chrome.
 J'ai quand même hébergé le site malgré les defauts pour voir ce que ça
 donne sur mobile
 
-#Demo : http://ramirez-io.esy.es/
+# Demo : http://ramirez-io.esy.es/
