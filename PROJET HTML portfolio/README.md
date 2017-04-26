@@ -1,8 +1,6 @@
-J'ai rencontré une difficulté par rapport au type de navigateur 
-utilisé, le "margin-left" n'est pas le même pour le contenu de droite
-(avec ma photo) en fonction du navigateur et malgré mes recherches je 
-n'ai pas trouvé la solution. Je pensais qu'il fallait ajouter les
-prefixes -moz- et -webkit- mais ce n'est pas ça.
+J'ai rencontrÃ© une difficultÃ© par rapport au type de navigateur 
+utilisÃ©. Le "margin-left" n'est pas le mÃªme pour le contenu de droite
+(avec ma photo) en fonction du navigateur.
 
 div.container_right {
         width: 17%;
@@ -21,11 +19,10 @@ div.container_right {
         background-color: #ffffff;
     }
 
-Je retrouve le même problème pour les icons dans mon footer.
 Sans ces problemes la page fonctionne parfaitement, comme on peut le voir
-avec une preview google chrome.
-Si tu as une solution n'hesite pas à me répondre par mail s'il te plaît.
+avec google chrome.
 
-J'ai quand même uploadé le site malgré les defauts pour voir ce que ça
-donne sur mobile : http://ramirez-io.esy.es/
-Merci.
+J'ai quand mÃªme hÃ©bergÃ© le site malgrÃ© les defauts pour voir ce que Ã§a
+donne sur mobile
+
+#Demo : http://ramirez-io.esy.es/
